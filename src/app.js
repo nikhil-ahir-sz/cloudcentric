@@ -1,7 +1,7 @@
 /**
  * Created by nikhila on 02/24/2016.
  */
-import 'babel-core/polyfill';
+import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './js/containers/Root';

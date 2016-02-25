@@ -4,8 +4,7 @@
 let React = require('react');
 let { Router, Route, IndexRoute } = require('react-router');
 import {App} from './js/containers';
-
-let Home = require('./js/component/Home');
+import Home from './js/component/Home';
 
 var Routes = (
     <Router>

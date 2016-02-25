@@ -31,7 +31,10 @@ var webpack = function(watch) {
                 {
                     test: [/\.js$/, /\.jsx$/],
                     exclude: [new RegExp(modulesPath)],
-                    loader: "babel-loader"
+                    loader: "babel-loader",
+                    query: {
+                        presets: ['react', 'es2015']
+                    }
                 },
                 { test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery' },
                 { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&minetype=application/font-woff" },
