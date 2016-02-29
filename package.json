@@ -37,6 +37,7 @@
     "react-mixin": "^3.0.3",
     "react-redux": "^4.4.0",
     "react-router": "1.0.1",
+    "react-scroll": "^1.0.3",
     "react-spinkit": "^1.1.4",
     "react-toastr": "^2.4.0",
     "redux": "^3.3.1",

@@ -56,7 +56,11 @@ gulp.task('jswatch', function() {
 });
 
 gulp.task('style', function() {
-    return gulp.src(srcPath + "/css/*.css")
+    return gulp.src([modulesPath + "/bootstrap/dist/css/bootstrap.min.css",
+            modulesPath + "/bootstrap/dist/css/bootstrap-theme.min.css",
+            srcPath + "/css/*.css"
+        ])
+        .pipe(concatCss('animate.css'))
         .pipe(concatCss('styles.css'))
         .pipe(gulp.dest(distPath));
 });
