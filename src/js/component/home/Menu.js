@@ -13,7 +13,7 @@ import React, {
 import {Navbar, NavItem, Nav, NavDropdown, MenuItem} from 'react-bootstrap';
 import {Link, Events} from 'react-scroll';
 
-export default class Menu extends Component {
+class Menu extends Component {
     render() {
         let brandImg = (<img className='logo' src={this.props.logo} alt="" />);
         let inverseClass = this.props.inverseMenu ? 'inverse-menu' : 'menu';
@@ -37,3 +37,5 @@ export default class Menu extends Component {
         );
     }
 }
+
+export default Menu;
